@@ -17,8 +17,7 @@ With Sneaky Fudger you can fudge the underlying random number generator used by 
 *Only tested on the DND5e system, but it should work with all systems unless they modify or don't use `CONFIG.Dice.randomUniform`.*
 
 ## Why?
-
-As a new GM I sometimes misjudge encounters, which can be problematic since me and my players enjoy most rolls being public as it adds to the suspense and keeps some heat off me (blame the dice). There's also only so many times you can insert a deus ex machina or come clean and nerf things a bit before you ruin immersion. So I made this as a last resort to fix some problems I might have caused by being too careless.
+Me and my players enjoy most rolls and modifiers being public as it adds to the suspense and keeps some heat off me (blame the dice). Unfortunately, as a new GM I sometimes misjudge encounters and there's also only so many times you can insert a deus ex machina or nerf things before you ruin immersion. So I made this as a last resort to fix some problems I might have caused by being too careless.
 
 ## How do I use it?
 
