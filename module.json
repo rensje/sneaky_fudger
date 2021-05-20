@@ -1,0 +1,23 @@
+{
+    "name": "sneaky_fudger",
+    "title": "Sneaky Fudger",
+    "description": "Fudges all dice rolls for yourself and all players by easily changing the underlying random number generator for dice.",
+    "author": "rensje",
+    "version": "0.1",
+    "socket": "true",
+    "esmodules": ["main.js"],
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "0.7.9",
+    "packs": [{
+        "name": "Sneaky Fudger Macros",
+        "label": "Sneaky Fudger Macros",
+        "path": "macros.db",
+        "module": "sneaky_fudger",
+        "entity": "Macro"
+    }],
+    "dependencies": [
+        {
+            "name": "lib-wrapper"
+        }
+    ]
+}

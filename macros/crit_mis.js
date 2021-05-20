@@ -1,0 +1,1 @@
+sneaky_fudger.fudgeRolls(0, 0);
