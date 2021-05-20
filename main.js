@@ -25,6 +25,9 @@ function fudgeRolls(min, max) {
         min: clampNumber(min, Number.MIN_VALUE, 0.9999999403953552),
         max: clampNumber(max, Number.MIN_VALUE, 0.9999999403953552)
     }
+
+    data.min = Math.min(data.min, data.max);
+    data.max = Math.max(data.min, data.max);
     ChatMessage.create({ content: `Changed rolls min and max to ${formatRollNumber(data.min)} and ${formatRollNumber(data.max)}`, whisper: ChatMessage.getWhisperRecipients("GM") });
     game.socket.emit(SOCKETNAME, data);
     globalThis[MODULE_ID].data = data;
