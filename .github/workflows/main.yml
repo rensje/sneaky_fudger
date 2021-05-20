@@ -30,3 +30,9 @@ jobs:
         with:
           filename: 'release.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
+          
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "release.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
