@@ -22,12 +22,13 @@ function fudgeRolls(min, max) {
     // Clamp min and max such that they are not 0 or 1 but arbitrarily close,
     // because errors occur when the random number returned is 0 even though CONFIG.Dice.randomUniform can return numbers in the range [0,1).
     const data = {
-        min: clampNumber(min, Number.MIN_VALUE, 0.9999999403953552),
-        max: clampNumber(max, Number.MIN_VALUE, 0.9999999403953552)
+        min: Math.clamped(min, Number.MIN_VALUE, 0.9999999403953552),
+        max: Math.clamped(max, Number.MIN_VALUE, 0.9999999403953552)
     }
 
     data.min = Math.min(data.min, data.max);
     data.max = Math.max(data.min, data.max);
+    
     ChatMessage.create({ content: `Changed rolls min and max to ${formatRollNumber(data.min)} and ${formatRollNumber(data.max)}`, whisper: ChatMessage.getWhisperRecipients("GM") });
     game.socket.emit(SOCKETNAME, data);
     globalThis[MODULE_ID].data = data;
