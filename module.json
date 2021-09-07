@@ -3,7 +3,7 @@
     "title": "Sneaky Fudger",
     "description": "Fudges all dice rolls for yourself and all players by easily changing the underlying random number generator used for the dice.",
     "author": "rensje",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "socket": "true",
     "esmodules": ["main.js"],
     "minimumCoreVersion": "0.8.9",
